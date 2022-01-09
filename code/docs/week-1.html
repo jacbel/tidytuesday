@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Week 1 | Tidy Tuesday Contributions</title>
+  <meta name="description" content="2 Week 1 | Tidy Tuesday Contributions" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Week 1 | Tidy Tuesday Contributions" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Week 1 | Tidy Tuesday Contributions" />
+  
+  
+  
+
+<meta name="author" content="Jacob Bellmund" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installing-bookdown"><i class="fa fa-check"></i><b>1.1</b> Installing bookdown</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#set-up"><i class="fa fa-check"></i><b>1.2</b> Set up</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week-1.html"><a href="week-1.html"><i class="fa fa-check"></i><b>2</b> Week 1</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="week-1.html"><a href="week-1.html#data"><i class="fa fa-check"></i><b>2.1</b> Data</a></li>
+<li class="chapter" data-level="2.2" data-path="week-1.html"><a href="week-1.html#data-wrangling"><i class="fa fa-check"></i><b>2.2</b> Data wrangling</a></li>
+<li class="chapter" data-level="2.3" data-path="week-1.html"><a href="week-1.html#home-field-advantage"><i class="fa fa-check"></i><b>2.3</b> Home field advantage</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="week-1.html"><a href="week-1.html#all-leagues"><i class="fa fa-check"></i><b>2.3.1</b> All leagues</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week-1.html"><a href="week-1.html#leagues-separately"><i class="fa fa-check"></i><b>2.3.2</b> Leagues separately</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week-1.html"><a href="week-1.html#visualization"><i class="fa fa-check"></i><b>2.3.3</b> Visualization</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tidy Tuesday Contributions</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week-1" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Week 1</h1>
+<p>The <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-01-04">instructions for Week 1 of 2022</a> are short:
+&gt;This was really just a bring your own dataset week.</p>
+<div id="data" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Data</h2>
+<p>Let’s look at some football (soccer) data from main European leagues. I use the data as distributed in the <a href="https://github.com/jalapic/engsoccerdata">engsoccerdata package</a>.</p>
+<p>First load the package after installing it if needed.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="week-1.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;tidyverse&quot;</span>)){<span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)}</span>
+<span id="cb3-2"><a href="week-1.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  </span>
+<span id="cb3-3"><a href="week-1.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="week-1.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;devtools&quot;</span>)){<span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)}</span>
+<span id="cb3-5"><a href="week-1.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(devtools)</span>
+<span id="cb3-6"><a href="week-1.html#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="week-1.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;engsoccerdata&quot;</span>)){<span class="fu">install_github</span>(<span class="st">&quot;jalapic/engsoccerdata&quot;</span>)}</span>
+<span id="cb3-8"><a href="week-1.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(engsoccerdata)</span>
+<span id="cb3-9"><a href="week-1.html#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="week-1.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;patchwork&quot;</span>)){<span class="fu">install.packages</span>(<span class="st">&quot;patchwork&quot;</span>)}</span>
+<span id="cb3-11"><a href="week-1.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span></code></pre></div>
+<p>Load data from England, France, Germany, Italy and Spain.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="week-1.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load data</span></span>
+<span id="cb4-2"><a href="week-1.html#cb4-2" aria-hidden="true" tabindex="-1"></a>df_eng <span class="ot">&lt;-</span> engsoccerdata<span class="sc">::</span>england</span>
+<span id="cb4-3"><a href="week-1.html#cb4-3" aria-hidden="true" tabindex="-1"></a>df_fra <span class="ot">&lt;-</span> engsoccerdata<span class="sc">::</span>france</span>
+<span id="cb4-4"><a href="week-1.html#cb4-4" aria-hidden="true" tabindex="-1"></a>df_ger <span class="ot">&lt;-</span> engsoccerdata<span class="sc">::</span>germany</span>
+<span id="cb4-5"><a href="week-1.html#cb4-5" aria-hidden="true" tabindex="-1"></a>df_ita <span class="ot">&lt;-</span> engsoccerdata<span class="sc">::</span>italy</span>
+<span id="cb4-6"><a href="week-1.html#cb4-6" aria-hidden="true" tabindex="-1"></a>df_esp <span class="ot">&lt;-</span> engsoccerdata<span class="sc">::</span>spain</span></code></pre></div>
+</div>
+<div id="data-wrangling" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Data wrangling</h2>
+<p>We want to add all data to one data frame. Some columns are missing, so let’s quickly compute them.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="week-1.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Germany is missing the columns for total goals, goal difference and result</span></span>
+<span id="cb5-2"><a href="week-1.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Let&#39;s create these</span></span>
+<span id="cb5-3"><a href="week-1.html#cb5-3" aria-hidden="true" tabindex="-1"></a>df_ger <span class="ot">&lt;-</span> df_ger <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="week-1.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">totgoal =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-5"><a href="week-1.html#cb5-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">goaldif =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-6"><a href="week-1.html#cb5-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">result =</span> <span class="fu">case_when</span>(hgoal <span class="sc">&gt;</span> vgoal <span class="sc">~</span> <span class="st">&quot;H&quot;</span>,</span>
+<span id="cb5-7"><a href="week-1.html#cb5-7" aria-hidden="true" tabindex="-1"></a>                              vgoal <span class="sc">&gt;</span> hgoal <span class="sc">~</span> <span class="st">&quot;A&quot;</span>,</span>
+<span id="cb5-8"><a href="week-1.html#cb5-8" aria-hidden="true" tabindex="-1"></a>                              hgoal <span class="sc">==</span> vgoal <span class="sc">~</span> <span class="st">&quot;D&quot;</span>),</span>
+<span id="cb5-9"><a href="week-1.html#cb5-9" aria-hidden="true" tabindex="-1"></a>           <span class="at">country =</span> <span class="st">&quot;Germany&quot;</span>)</span>
+<span id="cb5-10"><a href="week-1.html#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="week-1.html#cb5-11" aria-hidden="true" tabindex="-1"></a>df_ita <span class="ot">&lt;-</span> df_ita <span class="sc">%&gt;%</span></span>
+<span id="cb5-12"><a href="week-1.html#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">division =</span> <span class="dv">1</span>,</span>
+<span id="cb5-13"><a href="week-1.html#cb5-13" aria-hidden="true" tabindex="-1"></a>           <span class="at">totgoal =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-14"><a href="week-1.html#cb5-14" aria-hidden="true" tabindex="-1"></a>           <span class="at">goaldif =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-15"><a href="week-1.html#cb5-15" aria-hidden="true" tabindex="-1"></a>           <span class="at">result =</span> <span class="fu">case_when</span>(hgoal <span class="sc">&gt;</span> vgoal <span class="sc">~</span> <span class="st">&quot;H&quot;</span>,</span>
+<span id="cb5-16"><a href="week-1.html#cb5-16" aria-hidden="true" tabindex="-1"></a>                              vgoal <span class="sc">&gt;</span> hgoal <span class="sc">~</span> <span class="st">&quot;A&quot;</span>,</span>
+<span id="cb5-17"><a href="week-1.html#cb5-17" aria-hidden="true" tabindex="-1"></a>                              hgoal <span class="sc">==</span> vgoal <span class="sc">~</span> <span class="st">&quot;D&quot;</span>),</span>
+<span id="cb5-18"><a href="week-1.html#cb5-18" aria-hidden="true" tabindex="-1"></a>           <span class="at">country =</span> <span class="st">&quot;Italy&quot;</span>)</span>
+<span id="cb5-19"><a href="week-1.html#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="week-1.html#cb5-20" aria-hidden="true" tabindex="-1"></a>df_esp <span class="ot">&lt;-</span> df_esp <span class="sc">%&gt;%</span></span>
+<span id="cb5-21"><a href="week-1.html#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(round <span class="sc">==</span> <span class="st">&quot;league&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-22"><a href="week-1.html#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>round, <span class="sc">-</span>group, <span class="sc">-</span>notes, <span class="sc">-</span>HT) <span class="sc">%&gt;%</span></span>
+<span id="cb5-23"><a href="week-1.html#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">division =</span> <span class="dv">1</span>,</span>
+<span id="cb5-24"><a href="week-1.html#cb5-24" aria-hidden="true" tabindex="-1"></a>           <span class="at">totgoal =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-25"><a href="week-1.html#cb5-25" aria-hidden="true" tabindex="-1"></a>           <span class="at">goaldif =</span> hgoal <span class="sc">+</span> vgoal,</span>
+<span id="cb5-26"><a href="week-1.html#cb5-26" aria-hidden="true" tabindex="-1"></a>           <span class="at">result =</span> <span class="fu">case_when</span>(hgoal <span class="sc">&gt;</span> vgoal <span class="sc">~</span> <span class="st">&quot;H&quot;</span>,</span>
+<span id="cb5-27"><a href="week-1.html#cb5-27" aria-hidden="true" tabindex="-1"></a>                              vgoal <span class="sc">&gt;</span> hgoal <span class="sc">~</span> <span class="st">&quot;A&quot;</span>,</span>
+<span id="cb5-28"><a href="week-1.html#cb5-28" aria-hidden="true" tabindex="-1"></a>                              hgoal <span class="sc">==</span> vgoal <span class="sc">~</span> <span class="st">&quot;D&quot;</span>),</span>
+<span id="cb5-29"><a href="week-1.html#cb5-29" aria-hidden="true" tabindex="-1"></a>           <span class="at">country =</span> <span class="st">&quot;Spain&quot;</span>)</span>
+<span id="cb5-30"><a href="week-1.html#cb5-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-31"><a href="week-1.html#cb5-31" aria-hidden="true" tabindex="-1"></a>df_eng <span class="ot">&lt;-</span> df_eng <span class="sc">%&gt;%</span></span>
+<span id="cb5-32"><a href="week-1.html#cb5-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">country =</span> <span class="st">&quot;England&quot;</span>)</span>
+<span id="cb5-33"><a href="week-1.html#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="week-1.html#cb5-34" aria-hidden="true" tabindex="-1"></a>df_fra <span class="ot">&lt;-</span> df_fra <span class="sc">%&gt;%</span></span>
+<span id="cb5-35"><a href="week-1.html#cb5-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">country =</span> <span class="st">&quot;France&quot;</span>,</span>
+<span id="cb5-36"><a href="week-1.html#cb5-36" aria-hidden="true" tabindex="-1"></a>           <span class="at">result =</span> <span class="fu">case_when</span>(hgoal <span class="sc">&gt;</span> vgoal <span class="sc">~</span> <span class="st">&quot;H&quot;</span>,</span>
+<span id="cb5-37"><a href="week-1.html#cb5-37" aria-hidden="true" tabindex="-1"></a>                              vgoal <span class="sc">&gt;</span> hgoal <span class="sc">~</span> <span class="st">&quot;A&quot;</span>,</span>
+<span id="cb5-38"><a href="week-1.html#cb5-38" aria-hidden="true" tabindex="-1"></a>                              hgoal <span class="sc">==</span> vgoal <span class="sc">~</span> <span class="st">&quot;D&quot;</span>)</span>
+<span id="cb5-39"><a href="week-1.html#cb5-39" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-40"><a href="week-1.html#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="week-1.html#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="co"># build common data frame</span></span>
+<span id="cb5-42"><a href="week-1.html#cb5-42" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_eng, df_ger, df_esp, df_ita, df_fra)</span></code></pre></div>
+</div>
+<div id="home-field-advantage" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Home field advantage</h2>
+<div id="all-leagues" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> All leagues</h3>
+<p>First, let’s compute the proportions of home wins, away wins and draws irrespective of country (i.e. league).</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="week-1.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># result proportions by country</span></span>
+<span id="cb6-2"><a href="week-1.html#cb6-2" aria-hidden="true" tabindex="-1"></a>df_win <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="week-1.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Season) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="week-1.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">home_win =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;H&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb6-5"><a href="week-1.html#cb6-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">away_win =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;A&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb6-6"><a href="week-1.html#cb6-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">draw =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;D&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb6-7"><a href="week-1.html#cb6-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="week-1.html#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(home_win, away_win, draw), <span class="at">names_to =</span> <span class="st">&quot;result&quot;</span>)</span>
+<span id="cb6-9"><a href="week-1.html#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="week-1.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># df for labelling</span></span>
+<span id="cb6-11"><a href="week-1.html#cb6-11" aria-hidden="true" tabindex="-1"></a>df_label <span class="ot">=</span> df_win <span class="sc">%&gt;%</span></span>
+<span id="cb6-12"><a href="week-1.html#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Season <span class="sc">==</span> <span class="fu">max</span>(Season)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-13"><a href="week-1.html#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">label =</span> <span class="fu">case_when</span>(result <span class="sc">==</span> <span class="st">&quot;home_win&quot;</span><span class="sc">~</span><span class="st">&quot;Home Win&quot;</span>,</span>
+<span id="cb6-14"><a href="week-1.html#cb6-14" aria-hidden="true" tabindex="-1"></a>                             result <span class="sc">==</span> <span class="st">&quot;away_win&quot;</span><span class="sc">~</span><span class="st">&quot;Away Win&quot;</span>,</span>
+<span id="cb6-15"><a href="week-1.html#cb6-15" aria-hidden="true" tabindex="-1"></a>                             result <span class="sc">==</span> <span class="st">&quot;draw&quot;</span><span class="sc">~</span><span class="st">&quot;Draw&quot;</span>)</span>
+<span id="cb6-16"><a href="week-1.html#cb6-16" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div>
+<p>Visualize percentages of home vs. away wins over time as a line graph.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="week-1.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot as line graph</span></span>
+<span id="cb7-2"><a href="week-1.html#cb7-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_win <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Season <span class="sc">&gt;</span> <span class="dv">1960</span>, result <span class="sc">!=</span> <span class="st">&quot;draw&quot;</span>), </span>
+<span id="cb7-3"><a href="week-1.html#cb7-3" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Season,</span>
+<span id="cb7-4"><a href="week-1.html#cb7-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> value, </span>
+<span id="cb7-5"><a href="week-1.html#cb7-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">group =</span> result, </span>
+<span id="cb7-6"><a href="week-1.html#cb7-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> result)) <span class="sc">+</span></span>
+<span id="cb7-7"><a href="week-1.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb7-8"><a href="week-1.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>(<span class="at">data =</span> df_label <span class="sc">%&gt;%</span> <span class="fu">filter</span>(result <span class="sc">!=</span> <span class="st">&quot;draw&quot;</span>),</span>
+<span id="cb7-9"><a href="week-1.html#cb7-9" aria-hidden="true" tabindex="-1"></a>              <span class="fu">aes</span>(<span class="at">x =</span> Season, <span class="at">y =</span> value, <span class="at">label =</span> label), </span>
+<span id="cb7-10"><a href="week-1.html#cb7-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="dv">1</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-11"><a href="week-1.html#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">1960</span>, <span class="dv">2035</span>)) <span class="sc">+</span></span>
+<span id="cb7-12"><a href="week-1.html#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#ef8a62&quot;</span>, <span class="st">&quot;#67a9cf&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb7-13"><a href="week-1.html#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(<span class="at">accuracy =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb7-14"><a href="week-1.html#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb7-15"><a href="week-1.html#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">&quot;The decline of the home field advantage in top-tier European soccer&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-16"><a href="week-1.html#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="at">geom =</span> <span class="st">&quot;text&quot;</span>, <span class="at">label =</span> <span class="st">&quot;across 5 major European leagues&quot;</span>,</span>
+<span id="cb7-17"><a href="week-1.html#cb7-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">x=</span><span class="cn">Inf</span>, <span class="at">y=</span><span class="cn">Inf</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">vjust =</span> <span class="dv">1</span>,</span>
+<span id="cb7-18"><a href="week-1.html#cb7-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">11</span><span class="sc">/</span>.pt, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-19"><a href="week-1.html#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb7-20"><a href="week-1.html#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb7-21"><a href="week-1.html#cb7-21" aria-hidden="true" tabindex="-1"></a>          <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb7-22"><a href="week-1.html#cb7-22" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb7-23"><a href="week-1.html#cb7-23" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>))</span></code></pre></div>
+<pre><code>## Warning: Ignoring unknown parameters: face</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="week-1.html#cb9-1" aria-hidden="true" tabindex="-1"></a>p1</span></code></pre></div>
+<p><img src="Test-book_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="leagues-separately" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Leagues separately</h3>
+<p>Second, we repeat the above steps, but separately for each country.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="week-1.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># result proportions by country</span></span>
+<span id="cb10-2"><a href="week-1.html#cb10-2" aria-hidden="true" tabindex="-1"></a>df_win_country <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="week-1.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(country, Season) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="week-1.html#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">home_win =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;H&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb10-5"><a href="week-1.html#cb10-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">away_win =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;A&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb10-6"><a href="week-1.html#cb10-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">draw =</span> <span class="fu">sum</span>(result <span class="sc">==</span> <span class="st">&quot;D&quot;</span>)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb10-7"><a href="week-1.html#cb10-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-8"><a href="week-1.html#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(home_win, away_win, draw), <span class="at">names_to =</span> <span class="st">&quot;result&quot;</span>)</span>
+<span id="cb10-9"><a href="week-1.html#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="week-1.html#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># df for labelling</span></span>
+<span id="cb10-11"><a href="week-1.html#cb10-11" aria-hidden="true" tabindex="-1"></a>df_label <span class="ot">=</span> df_win_country <span class="sc">%&gt;%</span></span>
+<span id="cb10-12"><a href="week-1.html#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span></span>
+<span id="cb10-13"><a href="week-1.html#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Season <span class="sc">==</span> <span class="fu">max</span>(Season)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-14"><a href="week-1.html#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">label =</span> <span class="fu">case_when</span>(result <span class="sc">==</span> <span class="st">&quot;home_win&quot;</span><span class="sc">~</span><span class="st">&quot;Home Win&quot;</span>,</span>
+<span id="cb10-15"><a href="week-1.html#cb10-15" aria-hidden="true" tabindex="-1"></a>                             result <span class="sc">==</span> <span class="st">&quot;away_win&quot;</span><span class="sc">~</span><span class="st">&quot;Away Win&quot;</span>,</span>
+<span id="cb10-16"><a href="week-1.html#cb10-16" aria-hidden="true" tabindex="-1"></a>                             result <span class="sc">==</span> <span class="st">&quot;draw&quot;</span><span class="sc">~</span><span class="st">&quot;Draw&quot;</span>)</span>
+<span id="cb10-17"><a href="week-1.html#cb10-17" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div>
+<p>Make a line plot with one facet per country</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="week-1.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot as line graph with one facet per country</span></span>
+<span id="cb11-2"><a href="week-1.html#cb11-2" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_win_country <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Season <span class="sc">&gt;</span> <span class="dv">1960</span>, result <span class="sc">!=</span> <span class="st">&quot;draw&quot;</span>), </span>
+<span id="cb11-3"><a href="week-1.html#cb11-3" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Season,</span>
+<span id="cb11-4"><a href="week-1.html#cb11-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> value, </span>
+<span id="cb11-5"><a href="week-1.html#cb11-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">group =</span> result, </span>
+<span id="cb11-6"><a href="week-1.html#cb11-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> result)) <span class="sc">+</span></span>
+<span id="cb11-7"><a href="week-1.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb11-8"><a href="week-1.html#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">#geom_text(data = df_label %&gt;% filter(result != &quot;draw&quot;),</span></span>
+<span id="cb11-9"><a href="week-1.html#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#          aes(x = Season, y = value, label = label), </span></span>
+<span id="cb11-10"><a href="week-1.html#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#          hjust = -0.2, alpha = 1, fontface = &quot;bold&quot;) +</span></span>
+<span id="cb11-11"><a href="week-1.html#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#xlim(c(1960, 2026)) +</span></span>
+<span id="cb11-12"><a href="week-1.html#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#ef8a62&quot;</span>, <span class="st">&quot;#67a9cf&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb11-13"><a href="week-1.html#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1970</span>, <span class="dv">2010</span>, <span class="dv">20</span>),</span>
+<span id="cb11-14"><a href="week-1.html#cb11-14" aria-hidden="true" tabindex="-1"></a>                       <span class="at">minor_breaks =</span> <span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2020</span>, <span class="dv">20</span>)) <span class="sc">+</span></span>
+<span id="cb11-15"><a href="week-1.html#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(<span class="at">accuracy =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb11-16"><a href="week-1.html#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb11-17"><a href="week-1.html#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>country, <span class="at">nrow =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb11-18"><a href="week-1.html#cb11-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">caption =</span> <span class="st">&quot;Visualization by Jacob Bellmund, licensed under CC BY 4.0.</span><span class="sc">\n</span><span class="st">Data based on: James P. Curley (2016). engsoccerdata: English Soccer Data 1871-2016. v. 0.1.7&quot;</span>)<span class="sc">+</span></span>
+<span id="cb11-19"><a href="week-1.html#cb11-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb11-20"><a href="week-1.html#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb11-21"><a href="week-1.html#cb11-21" aria-hidden="true" tabindex="-1"></a>          <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb11-22"><a href="week-1.html#cb11-22" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb11-23"><a href="week-1.html#cb11-23" aria-hidden="true" tabindex="-1"></a>          <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb11-24"><a href="week-1.html#cb11-24" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>))</span>
+<span id="cb11-25"><a href="week-1.html#cb11-25" aria-hidden="true" tabindex="-1"></a>p2</span></code></pre></div>
+<p><img src="Test-book_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="visualization" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Visualization</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="week-1.html#cb12-1" aria-hidden="true" tabindex="-1"></a>dsgn <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
+<span id="cb12-2"><a href="week-1.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="st">ABBBC</span></span>
+<span id="cb12-3"><a href="week-1.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="st">DDDDD</span></span>
+<span id="cb12-4"><a href="week-1.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
+<span id="cb12-5"><a href="week-1.html#cb12-5" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">plot_spacer</span>() <span class="sc">+</span> p1 <span class="sc">+</span>  <span class="fu">plot_spacer</span>() <span class="sc">+</span> p2 <span class="sc">+</span></span>
+<span id="cb12-6"><a href="week-1.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_layout</span>(<span class="at">design =</span> dsgn, <span class="at">guides =</span> <span class="st">&quot;keep&quot;</span>)</span>
+<span id="cb12-7"><a href="week-1.html#cb12-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="Test-book_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="week-1.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>, <span class="st">&quot;bellmund_tidytuesday_2022_wk1.png&quot;</span>), <span class="at">plot =</span> p,</span>
+<span id="cb13-2"><a href="week-1.html#cb13-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>)</span></code></pre></div>
+<p>Here is the final visualization with the correct aspect ratio:
+<img src="figures/bellmund_tidytuesday_2022_wk1.png" style="width:100.0%" alt="Line charts showing the proportions of home and away wins for 5 major European soccer leagues between 1960 and 2020" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

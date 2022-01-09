@@ -1,0 +1,10 @@
+**/data
+**/figures
+**/_bookdown_files
+.DS_Store
+.RData
+.Rhistory
+.Rproj.user/
+._.DS_Store
+._.gitignore
+._README.md

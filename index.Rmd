@@ -1,0 +1,35 @@
+---
+title: "Tidy Tuesday Contributions"
+author: "Jacob Bellmund"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+---
+
+# Intro
+
+This page serves as documentation for Jacob Bellmund's contributions to the [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) project. I will contribute as often as I can, but probably won't be able to make it every week.
+
+If you download the Github Repo, you should be able to run my code to reproduce or improve my contributions. If you have suggestions for improvements or any feedback, feel free to get in touch!
+
+## Installing bookdown
+
+If you don't have the [bookdown package](https://cran.r-project.org/web/packages/bookdown/index.html) installed, this should be the first thing you do. To install it, run from the R console:
+```{r, eval=FALSE}
+if(!require("bookdown")){install.packages("bookdown")}
+library(bookdown)  
+```
+
+
+## Set up
+
+
+```{r}
+
+# create folder for figure output if necessary using the here package
+if(!require("here")){install.packages("here")}
+library(patchwork)
+
+if (!dir.exists(here("figures"))){dir.create(here("figures"))}
+```

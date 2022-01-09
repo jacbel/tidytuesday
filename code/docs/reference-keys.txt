@@ -1,0 +1,10 @@
+intro
+installing-bookdown
+set-up
+week-1
+data
+data-wrangling
+home-field-advantage
+all-leagues
+leagues-separately
+visualization
