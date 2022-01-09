@@ -182,10 +182,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="set-up" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Set up</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create folder for figure output if necessary using the here package</span></span>
-<span id="cb2-2"><a href="index.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;here&quot;</span>)){<span class="fu">install.packages</span>(<span class="st">&quot;here&quot;</span>)}</span>
-<span id="cb2-3"><a href="index.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
-<span id="cb2-4"><a href="index.html#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="index.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>))){<span class="fu">dir.create</span>(<span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>))}</span></code></pre></div>
+<span id="cb2-2"><a href="index.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;here&quot;</span>)){<span class="fu">install.packages</span>(<span class="st">&quot;here&quot;</span>)}</span></code></pre></div>
+<pre><code>## Loading required package: here</code></pre>
+<pre><code>## here() starts at /Users/bellmund/ownCloud/projects/tidytuesday</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="index.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb5-2"><a href="index.html#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="index.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>))){<span class="fu">dir.create</span>(<span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>))}</span></code></pre></div>
 
 </div>
 </div>
