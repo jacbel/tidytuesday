@@ -1,5 +1,5 @@
-book_filename: "Test book"
-repo: https://github.com/
+book_filename: "Tidy Tuesday Contributions"
+repo: https://github.com/jacbel/tidytuesday
 output_dir: "docs"
 rmd_subdir: ["code"]
 new_session: no

@@ -1,10 +1,10 @@
-# Week 1
+# Week 1 {-}
 
 The [instructions for Week 1 of 2022](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-01-04) are short:
 >This was really just a bring your own dataset week.
 
 
-## Data
+## Data {-}
 
 Let's look at some football (soccer) data from main European leagues. I use the data as distributed in the [engsoccerdata package](https://github.com/jalapic/engsoccerdata).
 
@@ -37,7 +37,7 @@ df_esp <- engsoccerdata::spain
 
 ```
 
-## Data wrangling
+## Data wrangling {-}
 
 We want to add all data to one data frame. Some columns are missing, so let's quickly compute them.
 ```{r}
@@ -88,8 +88,8 @@ df <- rbind(df_eng, df_ger, df_esp, df_ita, df_fra)
 ```
 
 
-## Home field advantage
-### All leagues
+## Home field advantage {-}
+### All leagues {-}
 
 First, let's compute the proportions of home wins, away wins and draws irrespective of country (i.e. league).
 
@@ -142,7 +142,7 @@ p1 <- ggplot(df_win %>% filter(Season > 1960, result != "draw"),
 p1
 ```
 
-### Leagues separately
+### Leagues separately {-}
 
 Second, we repeat the above steps, but separately for each country. 
 
@@ -199,7 +199,7 @@ p2
 
 ```
 
-### Visualization
+### Visualization {-}
 
 ```{r}
 dsgn <- "
