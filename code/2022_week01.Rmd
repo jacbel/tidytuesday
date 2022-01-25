@@ -1,7 +1,8 @@
 # Week 1 {-}
 
 The [instructions for Week 1 of 2022](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-01-04) are short:
->This was really just a bring your own dataset week.
+
+> This was really just a bring your own dataset week.
 
 
 ## Data {-}
@@ -210,9 +211,9 @@ p <- plot_spacer() + p1 +  plot_spacer() + p2 +
     plot_layout(design = dsgn, guides = "keep")
 p
 
-ggsave(filename = here("figures", "bellmund_tidytuesday_2022_wk1.png"), plot = p,
+ggsave(filename = here("figures", "bellmund_tidytuesday_2022_wk01.png"), plot = p,
        width = 10, height = 6)
 ```
 
 Here is the final visualization with the correct aspect ratio:
-![Line charts showing the proportions of home and away wins for 5 major European soccer leagues between 1960 and 2020](figures/bellmund_tidytuesday_2022_wk1.png){width=100%}
+![Line charts showing the proportions of home and away wins for 5 major European soccer leagues between 1960 and 2020](figures/bellmund_tidytuesday_2022_wk01.png){width=100%}

@@ -135,9 +135,9 @@ p <- p2[[1]] + p2[[2]] + p2[[3]] + p2[[4]] +
     plot_layout(design = dsgn, guides = "keep")
 p
 
-ggsave(filename = here("figures", "bellmund_tidytuesday_2022_wk3.png"), plot = p,
+ggsave(filename = here("figures", "bellmund_tidytuesday_2022_wk03.png"), plot = p,
        width = 8, height = 5.5)
 ```
 
 Here is the final visualization with the correct aspect ratio:
-![Word clouds showing the frequently used words used to describe chocolate with varying amounts of cocoa](figures/bellmund_tidytuesday_2022_wk3.png){width=100%}
+![Word clouds showing the frequently used words used to describe chocolate with varying amounts of cocoa](figures/bellmund_tidytuesday_2022_wk03.png){width=100%}
