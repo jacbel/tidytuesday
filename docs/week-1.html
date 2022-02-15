@@ -154,6 +154,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="week-3.html"><a href="week-3.html#visualization-1"><i class="fa fa-check"></i>Visualization</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html"><i class="fa fa-check"></i>Week 7</a>
+<ul>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#data-2"><i class="fa fa-check"></i>Data</a></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#data-wrangling-2"><i class="fa fa-check"></i>Data wrangling</a></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#recreate-the-plot"><i class="fa fa-check"></i>Recreate the plot</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -293,7 +299,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-23"><a href="week-1.html#cb8-23" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>))</span></code></pre></div>
 <pre><code>## Warning: Ignoring unknown parameters: face</code></pre>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="week-1.html#cb10-1" aria-hidden="true" tabindex="-1"></a>p1</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="leagues-separately" class="section level3 unnumbered">
 <h3>Leagues separately</h3>
@@ -341,7 +347,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb12-23"><a href="week-1.html#cb12-23" aria-hidden="true" tabindex="-1"></a>          <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
 <span id="cb12-24"><a href="week-1.html#cb12-24" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>))</span>
 <span id="cb12-25"><a href="week-1.html#cb12-25" aria-hidden="true" tabindex="-1"></a>p2</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>
 <div id="visualization" class="section level3 unnumbered">
 <h3>Visualization</h3>
@@ -352,7 +358,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-5"><a href="week-1.html#cb13-5" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">plot_spacer</span>() <span class="sc">+</span> p1 <span class="sc">+</span>  <span class="fu">plot_spacer</span>() <span class="sc">+</span> p2 <span class="sc">+</span></span>
 <span id="cb13-6"><a href="week-1.html#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_layout</span>(<span class="at">design =</span> dsgn, <span class="at">guides =</span> <span class="st">&quot;keep&quot;</span>)</span>
 <span id="cb13-7"><a href="week-1.html#cb13-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="week-1.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>, <span class="st">&quot;bellmund_tidytuesday_2022_wk01.png&quot;</span>), <span class="at">plot =</span> p,</span>
 <span id="cb14-2"><a href="week-1.html#cb14-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>)</span></code></pre></div>
 <p>Here is the final visualization with the correct aspect ratio:

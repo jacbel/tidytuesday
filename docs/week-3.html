@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="week-1.html"/>
-
+<link rel="next" href="week-7.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -154,6 +154,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="week-3.html"><a href="week-3.html#visualization-1"><i class="fa fa-check"></i>Visualization</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html"><i class="fa fa-check"></i>Week 7</a>
+<ul>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#data-2"><i class="fa fa-check"></i>Data</a></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#data-wrangling-2"><i class="fa fa-check"></i>Data wrangling</a></li>
+<li class="chapter" data-level="" data-path="week-7.html"><a href="week-7.html#recreate-the-plot"><i class="fa fa-check"></i>Recreate the plot</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -192,9 +198,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="week-3.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read data</span></span>
 <span id="cb16-2"><a href="week-3.html#cb16-2" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-01-18/chocolate.csv&#39;</span>)</span></code></pre></div>
 <pre><code>## Rows: 2530 Columns: 10</code></pre>
-<pre><code>## ── Column specification ─────────────────────────────────────────────────────────────────────────────────────
+<pre><code>## ── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
-## chr (7): company_manufacturer, company_location, country_of_bean_origin, specific_bean_origin_or_bar_name...
+## chr (7): company_manufacturer, company_location, country_of_bean_origin, specific_bean_origin_or_bar_name, cocoa_percent, ingredients, most_memor...
 ## dbl (3): ref, review_date, rating</code></pre>
 <pre><code>## 
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
@@ -232,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb21-14"><a href="week-3.html#cb21-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb21-15"><a href="week-3.html#cb21-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;#B19E85&quot;</span>))</span>
 <span id="cb21-16"><a href="week-3.html#cb21-16" aria-hidden="true" tabindex="-1"></a>p1</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <div id="phrases-used-to-describe-chocolate-by-percentage-of-cocoa" class="section level3 unnumbered">
 <h3>Phrases used to describe chocolate by percentage of cocoa</h3>
 <p>Now, let’s do the same for different percentages of cocoa.</p>
@@ -283,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb22-45"><a href="week-3.html#cb22-45" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">size =</span> <span class="dv">18</span>, <span class="at">family =</span> <span class="st">&quot;Roboto&quot;</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span>
 <span id="cb22-46"><a href="week-3.html#cb22-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(p2[[i]])</span>
 <span id="cb22-47"><a href="week-3.html#cb22-47" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-17-1.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-17-2.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-17-3.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-17-4.png" width="672" /></p>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-16-1.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-16-2.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-16-3.png" width="672" /><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-16-4.png" width="672" /></p>
 </div>
 <div id="visualization-1" class="section level3 unnumbered">
 <h3>Visualization</h3>
@@ -292,9 +298,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb23-3"><a href="week-3.html#cb23-3" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> p2[[<span class="dv">1</span>]] <span class="sc">+</span> p2[[<span class="dv">2</span>]] <span class="sc">+</span> p2[[<span class="dv">3</span>]] <span class="sc">+</span> p2[[<span class="dv">4</span>]] <span class="sc">+</span></span>
 <span id="cb23-4"><a href="week-3.html#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_layout</span>(<span class="at">design =</span> dsgn, <span class="at">guides =</span> <span class="st">&quot;keep&quot;</span>)</span>
 <span id="cb23-5"><a href="week-3.html#cb23-5" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="week-3.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>, <span class="st">&quot;bellmund_tidytuesday_2022_wk03.png&quot;</span>), <span class="at">plot =</span> p,</span>
-<span id="cb24-2"><a href="week-3.html#cb24-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="fl">5.5</span>)</span></code></pre></div>
+<pre><code>## Warning in wordcloud_boxes(data_points = points_valid_first, boxes = boxes, : One word could not fit on page. It has been placed at its original
+## position.</code></pre>
+<p><img src="Tidy-Tuesday-Contributions_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="week-3.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">here</span>(<span class="st">&quot;figures&quot;</span>, <span class="st">&quot;bellmund_tidytuesday_2022_wk03.png&quot;</span>), <span class="at">plot =</span> p,</span>
+<span id="cb25-2"><a href="week-3.html#cb25-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="fl">5.5</span>)</span></code></pre></div>
 <p>Here is the final visualization with the correct aspect ratio:
 <img src="figures/bellmund_tidytuesday_2022_wk03.png" style="width:100.0%" alt="Word clouds showing the frequently used words used to describe chocolate with varying amounts of cocoa" /></p>
 
@@ -306,8 +314,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="week-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="week-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
